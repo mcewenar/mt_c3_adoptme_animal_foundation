@@ -1,1 +1,1 @@
-Deploy: https://adoptametic.herokuapp.com/inicio
+Link: https://adoptametic.herokuapp.com/inicio
