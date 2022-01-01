@@ -1,0 +1,184 @@
+import java.util.Scanner;
+public class CALCULADORA1 {
+
+
+	 public static void main(String[] args) {
+	
+           
+                     int signo=0,primerNumero=0,segundoNumero=0,N=0,n=0;
+					 boolean validacion= true;
+                                                  
+      double  resultado;
+       Scanner in = new Scanner(System.in);
+	   while(validacion){
+        while(signo==0){
+	
+	System.out.println("bienvenido a la calculadora basica");
+        System.out.println("que operacion va a realizar: ");
+        System.out.println("1 Suma");
+        System.out.println("2 Resta");
+        System.out.println("3 Multiplicacion");
+        System.out.println("4 Division");
+        signo=in.nextInt();
+	
+		
+		    switch(signo)
+		    {
+			    case 1: 
+                                if (signo==1){
+			   System.out.println("digite primer numero  a sumar:");
+            primerNumero=in.nextInt();
+            System.out.println("digite segundo numero a sumar:");
+            segundoNumero=in.nextInt();
+            resultado= primerNumero+segundoNumero;
+            System.out.println("El resultado  es: "+resultado);
+            break;
+                                }	
+			    case 2: 
+                                if (signo==2){
+            System.out.println("digite primer numero  a restar:");
+            primerNumero=in.nextInt();
+            System.out.println("digite segundo numero a restar:");
+            segundoNumero=in.nextInt();
+            resultado= primerNumero-segundoNumero;
+            System.out.println("El resultado  es: "+resultado);
+            break;
+                                }
+			    case 3: 
+                               if (signo==3){
+            System.out.println("digite primer numero  a multiplicar:");
+            primerNumero=in.nextInt();
+            System.out.println("digite segundo numero a multiplicar:");
+            segundoNumero=in.nextInt();
+            resultado= primerNumero*segundoNumero;
+            System.out.println("El resultado  es: "+resultado);
+                               }
+			    case 4: 
+                                if(signo==4){
+                                try{
+			      System.out.println("digite primer numero  a dividir:");
+            primerNumero=in.nextInt();
+            System.out.println("digite segundo numero a dividir:");
+            segundoNumero=in.nextInt();
+             if ( segundoNumero== 0) {
+                    throw new ArithmeticException(); 
+                } else {
+            resultado= (double)primerNumero/segundoNumero;
+            System.out.println("El resultado  es: "+resultado);
+		     }
+            } catch (ArithmeticException b) {
+                System.out.println("No puede dividir entre cero por favor ingrese otro vez el segundo numero ");
+                   segundoNumero=in.nextInt();
+                resultado= (double)primerNumero/segundoNumero;
+            System.out.println("El resultado  es: "+resultado);
+            }
+            }
+     
+        
+      
+     }
+     if (signo==5){
+         signo++;
+     }
+	 
+	 
+     else{
+         signo=0;
+     System.out.println("      ");
+     System.out.println("-------------------");
+      while (validacion){
+        System.out.print("¿Desea continuar si o no ? ");
+ 
+        System.out.println("S / N ");
+        String opc = in.next();
+          if (opc.equals("n") || opc.equals("N"))
+           {  System.out.print("El sistema ha finalizado ");
+               System.exit(0);
+           }   
+           
+        if (opc.equals("s") || opc.equals("S"))
+        {
+             
+                  
+     
+	System.out.println("bienvenido a la calculadora basica");
+        System.out.println("que operacion va a realizar: ");
+        System.out.println("1 Suma");
+        System.out.println("2 Resta");
+        System.out.println("3 Multiplicacion");
+        System.out.println("4 Division");
+        System.out.println("5 Salir");
+        signo=in.nextInt();
+	
+		
+		    switch(signo)
+		    {
+			    case 1: 
+                                if (signo==1){
+			   System.out.println("digite primer numero  a sumar:");
+            primerNumero=in.nextInt();
+            System.out.println("digite segundo numero a sumar:");
+            segundoNumero=in.nextInt();
+            resultado= primerNumero+segundoNumero;
+            System.out.println("El resultado  es: "+resultado);
+            break;
+                                }	
+			    case 2: 
+                                if (signo==2){
+			   System.out.println("digite primer numero  a restar:");
+            primerNumero=in.nextInt();
+            System.out.println("digite segundo numero a restar:");
+            segundoNumero=in.nextInt();
+            resultado= primerNumero-segundoNumero;
+            System.out.println("El resultado  es: "+resultado);
+            break;
+                                }
+			    case 3: 
+                                if(signo==3){
+			       System.out.println("digite primer numero  a multiplicar:");
+            primerNumero=in.nextInt();
+            System.out.println("digite segundo numero a multiplicar:");
+            segundoNumero=in.nextInt();
+            resultado= primerNumero*segundoNumero;
+            System.out.println("El resultado  es: "+resultado);
+                                }
+			    case 4: 
+                                if(signo==4){
+			      try{
+			      System.out.println("digite primer numero  a dividir:");
+            primerNumero=in.nextInt();
+            System.out.println("digite segundo numero a dividir:");
+            segundoNumero=in.nextInt();
+             if ( segundoNumero== 0) {
+                    throw new ArithmeticException(); 
+                } else {
+            resultado= (double)primerNumero/segundoNumero;
+            System.out.println("El resultado  es: "+resultado);
+		     }
+            } catch (ArithmeticException b) {
+                System.out.println("No puede dividir entre cero por favor ingrese otro vez el segundo numero ");
+                   segundoNumero=in.nextInt();
+                   resultado= (double)primerNumero/segundoNumero;
+            System.out.println("El resultado  es: "+resultado);
+            }     
+            }     
+     }
+    
+            
+           
+     }
+     
+        {
+     
+        }
+     
+         
+      }
+     }
+	 }
+          
+	   }
+														
+	}
+      
+}
